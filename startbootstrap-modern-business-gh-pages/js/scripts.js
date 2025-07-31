@@ -21,21 +21,9 @@ $(window).scroll(function() {
   });
 });
 
-// Back to Top Button
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 300) {
-    $('#backToTop').removeClass('d-none').fadeIn();
-  } else {
-    $('#backToTop').fadeOut();
-  }
-});
-
-$('#backToTop').click(function() {
-  $('html, body').animate({ scrollTop: 0 }, 800);
-});
 
 // Image zoom on hover
-$(".card-img-top").hover(
+$(".img-fluid.rounded-3.my-5").hover(
   function() {
     $(this).css("transform", "scale(1.05)");
   },
