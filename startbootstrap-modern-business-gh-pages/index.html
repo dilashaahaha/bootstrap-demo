@@ -5,13 +5,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>Modern Business</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+      :root {
+        --black: #0a0908;
+        --eerie-black: #161e22;
+        --almond: #eaedd5;
+        --khaki: #c6ac8f;
+        --walnut-brown: #5e503f;
+      }
+
+      body {
+        background-color: var(--almond);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .navbar {
+        background-color: var(--black) !important;
+      }
+
+      header {
+        background-color: var(--walnut-brown);
+      }
+
+      .feature .bi {
+        font-size: 1.5rem;
+      }
+
+      .btn-primary {
+        background-color: var(--eerie-black) !important;
+        border: none;
+        transition: transform 0.3s ease;
+      }
+
+      .btn-outline-light:hover,
+      .btn-primary:hover {
+        transform: scale(1.05);
+      }
+
+      img.img-fluid,
+      .card-img-top {
+        transition: transform 0.3s ease;
+      }
+
+      img.img-fluid:hover,
+      .card-img-top:hover {
+        transform: scale(1.05);
+      }
+
+      .card {
+        background-color: var(--almond);
+      }
+
+      .card-title {
+        color: var(--black);
+      }
+
+      .card-footer,
+      .card-body,
+      .badge {
+        background-color: var(--khaki);
+        color: var(--black);
+      }
+
+      footer {
+        background-color: var(--black);
+      }
+
+      #backToTop {
+        background-color: var(--eerie-black);
+        border: none;
+      }
+
+      #backToTop:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
+    </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -46,7 +122,7 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class="py-5" style="background-color: #9d8a7c;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -54,7 +130,7 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2"> MODERN BUSINESS SOLUTIONS</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Testing responsiveness with Bootstrap</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3 border-0" href="#features" style="background-color: #1d1c1d;">Get Started</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
                                 </div>
                             </div>
@@ -229,9 +305,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+    <script>
+      // Optional: Scroll to top
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        backToTop.classList.toggle("d-none", window.scrollY < 300);
+      });
 
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
         <button id="backToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3 d-none">
   <i class="bi bi-arrow-up"></i>
 </button>
+
     </body>
 </html>
