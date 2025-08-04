@@ -12,11 +12,51 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            :root {
+                --black: #0a0908;
+                --gunmetal: #22333b;
+                --almond: #e4d7c9;
+                --khaki: #c6ac8f;
+                --walnut-brown: #5e503f;
+            }
+            body {
+                background-color: var(--khaki) !important;
+            }
+            .navbar, .footer-custom {
+                background-color: var(--black) !important;
+            }
+            .portfolio-card {
+                background-color: var(--gunmetal) !important;
+                color: var(--almond) !important;
+                border: none !important;
+            }
+            .portfolio-card .fw-bolder,
+            .portfolio-card .h3,
+            .portfolio-card .link-dark {
+                color: var(--almond) !important;
+            }
+            .portfolio-card img {
+                border: 4px solid var(--almond);
+            }
+            .section-header {
+                color: var(--black) !important;
+            }
+            .contact-section {
+                background-color: var(--walnut-brown) !important;
+                color: var(--almond) !important;
+            }
+            .btn-contact {
+                background-color: var(--black) !important;
+                color: var(--almond) !important;
+                border: none !important;
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark footer-custom">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">Start Bootstrap</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -49,55 +89,56 @@
             <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Our Work</h1>
-                        <p class="lead fw-normal text-muted mb-0">Company portfolio</p>
+                        <h1 class="fw-bolder section-header">Our Work</h1>
+                        <p class="lead fw-normal mb-0" style="color: var(--black);">Company portfolio</p>
                     </div>
                     <div class="row gx-5">
                         <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                            <div class="card portfolio-card position-relative mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="assets/fi1.jpeg" alt="Project 1" />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project One</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                            <div class="card portfolio-card position-relative mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="assets/fi2.jpeg" alt="Project 2" />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project Two</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="position-relative mb-5 mb-lg-0">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                            <div class="card portfolio-card position-relative mb-5 mb-lg-0">
+                                <img class="img-fluid rounded-3 mb-3" src="assets/fi3.jpeg" alt="Project 3" />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project Three</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="position-relative">
-                                <img class="img-fluid rounded-3 mb-3" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project name</a>
+                            <div class="card portfolio-card position-relative">
+                                <img class="img-fluid rounded-3 mb-3" src="assets/fi1.jpeg" alt="Project 4" />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Project Four</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="py-5 bg-light">
+            <section class="py-5 contact-section">
                 <div class="container px-5 my-5">
                     <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-lg btn-primary" href="#!">Contact us</a>
+                    <img class="rounded-circle mb-3" src="assets/ceopic.jpeg" alt="Contact" width="80" height="80" />
+                    <a class="btn btn-lg btn-contact" href="#!">Contact us</a>
                 </div>
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer-custom py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0" style="color: var(--almond);">Copyright &copy; Your Website 2023</div></div>
                     <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Privacy</a>
+                        <span class="mx-1" style="color: var(--almond);">&middot;</span>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Terms</a>
+                        <span class="mx-1" style="color: var(--almond);">&middot;</span>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Contact</a>
                     </div>
                 </div>
             </div>
@@ -105,6 +146,4 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+        <script

@@ -12,11 +12,31 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+          <style>
+        :root {
+            --black: #0a0908;
+            --khaki: #c6ac8f;
+        }
+        .navbar, .footer-custom {
+            background-color: var(--black) !important;
+        }
+        .card.khaki-card {
+            background-color: var(--khaki) !important;
+        }
+         .btn-black {
+            background-color: var(--black) !important;
+            color: #fff !important;
+            border: none !important;
+        }
+        .bi-check {
+            color: var(--black) !important;
+        }
+    </style>  
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark footer-custom">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html">Start Bootstrap</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -47,15 +67,15 @@
             </nav>
             <!-- Pricing section-->
             <section class="bg-light py-5">
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Pay as you grow</h1>
-                        <p class="lead fw-normal text-muted mb-0">With our no hassle pricing plans</p>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder">Pay as you grow</h1>
+                    <p class="lead fw-normal text-muted mb-0">With our no hassle pricing plans</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
                         <!-- Pricing card free-->
                         <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-5 mb-xl-0">
+                            <div class="card mb-5 mb-xl-0 khaki-card">
                                 <div class="card-body p-5">
                                     <div class="small text-uppercase fw-bold text-muted">Free</div>
                                     <div class="mb-3">
@@ -96,13 +116,13 @@
                                             Monthly status reports
                                         </li>
                                     </ul>
-                                    <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                                    <div class="d-grid"><a class="btn btn-black" href="#!">Choose plan</a></div>
                                 </div>
                             </div>
                         </div>
                         <!-- Pricing card pro-->
                         <div class="col-lg-6 col-xl-4">
-                            <div class="card mb-5 mb-xl-0">
+                            <div class="card mb-5 mb-xl-0 khaki-card">
                                 <div class="card-body p-5">
                                     <div class="small text-uppercase fw-bold">
                                         <i class="bi bi-star-fill text-warning"></i>
@@ -114,31 +134,31 @@
                                     </div>
                                     <ul class="list-unstyled mb-4">
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             <strong>5 users</strong>
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             5GB storage
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Unlimited public projects
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Community access
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Unlimited private projects
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Dedicated support
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Free linked domain
                                         </li>
                                         <li class="text-muted">
@@ -146,13 +166,13 @@
                                             Monthly status reports
                                         </li>
                                     </ul>
-                                    <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
+                                    <div class="d-grid"><a class="btn btn-black" href="#!">Choose plan</a></div>
                                 </div>
                             </div>
                         </div>
                         <!-- Pricing card enterprise-->
                         <div class="col-lg-6 col-xl-4">
-                            <div class="card">
+                            <div class="card khaki-card">
                                 <div class="card-body p-5">
                                     <div class="small text-uppercase fw-bold text-muted">Enterprise</div>
                                     <div class="mb-3">
@@ -161,40 +181,40 @@
                                     </div>
                                     <ul class="list-unstyled mb-4">
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             <strong>Unlimited users</strong>
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             5GB storage
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Unlimited public projects
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Community access
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Unlimited private projects
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Dedicated support
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             <strong>Unlimited</strong>
                                             linked domains
                                         </li>
                                         <li class="text-muted">
-                                            <i class="bi bi-check text-primary"></i>
+                                            <i class="bi bi-check"></i>
                                             Monthly status reports
                                         </li>
                                     </ul>
-                                    <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+                                    <div class="d-grid"><a class="btn btn-black" href="#!">Choose plan</a></div>
                                 </div>
                             </div>
                         </div>
@@ -203,20 +223,20 @@
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
+        <footer class="footer-custom py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0" style="color: #fff;">Copyright &copy; Your Website 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!" style="color: #fff;">Privacy</a>
+                    <span class="mx-1" style="color: #fff;">&middot;</span>
+                    <a class="link-light small" href="#!" style="color: #fff;">Terms</a>
+                    <span class="mx-1" style="color: #fff;">&middot;</span>
+                    <a class="link-light small" href="#!" style="color: #fff;">Contact</a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

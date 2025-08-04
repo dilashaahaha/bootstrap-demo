@@ -12,8 +12,43 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            :root {
+                --black: #0a0908;
+                --gunmetal: #22333b;
+                --almond: #e4d7c9;
+                --khaki: #c6ac8f;
+                --walnut-brown: #5e503f;
+            }
+            .navbar, .footer-custom {
+                background-color: var(--black) !important;
+            }
+            .get-in-touch-card {
+                background-color: var(--walnut-brown) !important;
+            }
+            .get-in-touch-title {
+                color: var(--almond) !important;
+            }
+            .get-in-touch-desc {
+                color: var(--khaki) !important;
+            }
+            .btn-black {
+                background-color: var(--black) !important;
+                color: var(--almond) !important;
+                border: none;
+            }
+                        .feature-black {
+                background-color: var(--black) !important;
+                color: var(--almond) !important;
+                transition: transform 0.2s;
+            }
+            .feature-black:hover {
+                transform: scale(1.08);
+                box-shadow: 0 4px 16px rgba(34,51,59,0.15);
+            }
+        </style>
     </head>
-    <body class="d-flex flex-column">
+    <body class="d-flex flex-column" style="background-color: var(--khaki);">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,14 +82,16 @@
             </nav>
             <!-- Page content-->
             <section class="py-5">
-                <div class="container px-5">
+                <div class="container px-5" >
                     <!-- Contact form-->
-                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Get in touch</h1>
-                            <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
-                        </div>
+                    <div class="rounded-3 py-5 px-4 px-md-5 mb-5" style="background-color: var(--gunmetal);">
+    <div class="text-center mb-5">
+        <div class="feature rounded-3 mb-3" style="background-color: var(--black); color: var(--almond); display: inline-block;">
+            <i class="bi bi-envelope"></i>
+        </div>
+        <h1 class="fw-bolder" style="color: var(--almond);">Get in touch</h1>
+        <p class="lead fw-normal mb-0" style="color: var(--almond);">We'd love to hear from you</p>
+    </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
                                 <!-- * * * * * * * * * * * * * * *-->
@@ -116,40 +153,40 @@
                     <!-- Contact cards-->
                     <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
                         <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
-                            <div class="h5 mb-2">Chat with us</div>
-                            <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                            <div class="feature feature-black rounded-3 mb-3"><i class="bi bi-chat-dots"></i></div>
+                            <div class="h5 mb-2" style="color: var(--black);">Chat with us</div>
+                            <p class="mb-0" style="color: var(--black);">Chat live with one of our support specialists.</p>
                         </div>
                         <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people"></i></div>
-                            <div class="h5">Ask the community</div>
-                            <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                            <div class="feature feature-black rounded-3 mb-3"><i class="bi bi-people"></i></div>
+                            <div class="h5" style="color: var(--black);">Ask the community</div>
+                            <p class="mb-0" style="color: var(--black);">Explore our community forums and communicate with other users.</p>
                         </div>
                         <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
-                            <div class="h5">Support center</div>
-                            <p class="text-muted mb-0">Browse FAQ's and support articles to find solutions.</p>
+                            <div class="feature feature-black rounded-3 mb-3"><i class="bi bi-question-circle"></i></div>
+                            <div class="h5" style="color: var(--black);">Support center</div>
+                            <p class="mb-0" style="color: var(--black);">Browse FAQ's and support articles to find solutions.</p>
                         </div>
                         <div class="col">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
-                            <div class="h5">Call us</div>
-                            <p class="text-muted mb-0">Call us during normal business hours at (555) 892-9403.</p>
+                            <div class="feature feature-black rounded-3 mb-3"><i class="bi bi-telephone"></i></div>
+                            <div class="h5" style="color: var(--black);">Call us</div>
+                            <p class="mb-0" style="color: var(--black);">Call us during normal business hours at (555) 892-9403.</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer class="footer-custom py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0" style="color: var(--almond);">Copyright &copy; Your Website 2023</div></div>
                     <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Privacy</a>
+                        <span class="mx-1" style="color: var(--almond);">&middot;</span>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Terms</a>
+                        <span class="mx-1" style="color: var(--almond);">&middot;</span>
+                        <a class="link-light small" href="#!" style="color: var(--almond);">Contact</a>
                     </div>
                 </div>
             </div>
